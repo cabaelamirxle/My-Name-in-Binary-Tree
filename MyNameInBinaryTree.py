@@ -8,7 +8,7 @@ class Node:
         if self.data == None:
             self.data = data
         else:
-            if self.left < self.data:
+            if data < self.data:
                 if self.left is None:
                     self.left = Node(data)
                 else:
