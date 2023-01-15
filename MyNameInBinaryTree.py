@@ -33,3 +33,13 @@ if __name__ == '__main__':
     root.insert ('a')
     root.insert ('e')
     root.insert ('l')
+
+def inOrderPrint(tree):
+    if tree is None:
+        return
+    else:
+        inOrderPrint(tree.left)
+        print(tree.data, end=" ")
+        inOrderPrint(tree.right)
+
+inOrderPrint(root)
