@@ -31,7 +31,7 @@ if __name__ == '__main__':
     root.insert ('b')
     root.insert ('l')
 
-print("In Order Transversal: ")
+print("In Order Traversal: ")
 def inOrderPrint(tree):
     if tree is None:
         return
@@ -41,9 +41,10 @@ def inOrderPrint(tree):
         inOrderPrint(tree.right)
 
 inOrderPrint(root)
+
 print(" ")
 print(" ")
-print("Pre Order Transversal: ")
+print("Pre Order Traversal: ")
 def preOrderPrint(tree):
     if tree is None:
         return
@@ -53,3 +54,16 @@ def preOrderPrint(tree):
         preOrderPrint(tree.right)
 
 preOrderPrint(root)
+
+print(" ")
+print(" ")
+print("Post Order Traversal: ")
+def postOrderPrint(tree):
+    if tree is None:
+        return
+    else:
+        print(tree.data, end=" ")
+        postOrderPrint(tree.right)
+        postOrderPrint(tree.left)
+
+postOrderPrint(root)
