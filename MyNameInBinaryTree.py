@@ -28,10 +28,7 @@ if __name__ == '__main__':
     root.insert ('l')
     root.insert ('e')
     root.insert ('c')
-    root.insert ('a')
     root.insert ('b')
-    root.insert ('a')
-    root.insert ('e')
     root.insert ('l')
 
 def inOrderPrint(tree):
